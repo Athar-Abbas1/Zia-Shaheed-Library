@@ -3,10 +3,19 @@
        -moz-box-sizing: border-box;
             box-sizing: border-box;
   }
+  .html{
+    font-size: 62.5%;
+  }
+  :root{
+
+
+  }
 .header{
     display: flex;
     justify-content: space-between;
     background-color: aqua; 
+
+
 }
 .link{
     display: flex;
@@ -22,7 +31,7 @@ a{
     text-decoration: none;
 }
 .about{
-    font-size: 32px;
+    font-size: calc(24px + 30vh);
     padding: 5px;
 
 }
@@ -32,14 +41,39 @@ a{
     gap: 100px;
     padding: 20px;
     background-color: gold;
-    font-family: "Gotham SSm A","Gotham SSm B";
+    font-family:"Gotham SSm A","Gotham SSm B" ,;
+    flex-grow: 1;
+    flex-shrink: 0;
+    border-radius: 5px;
+    
+}
+.google-map {
+    padding-bottom: 50%;
+    position: relative;
+    margin-left: 800px;
+    margin-top: 50px;
+}
+
+.google-map iframe {
+    position: absolute;
+   
 }
 .footer{
     display: flex;
     justify-content: space-around;
+    background-color: grey;
+    margin-bottom: 0px;
+    font-size: 24px;
+    border-radius: 5px;
+    padding: 5px;
     
 }
 p{
     font-size: 18px;
     margin-top: auto;
+}
+.main{
+    background: url(/Zia-Shaheed-Library/images/l.jpg);
+    border-radius: 5px;
+    background-position:top;
 }
