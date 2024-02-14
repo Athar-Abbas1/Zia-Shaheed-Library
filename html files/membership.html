@@ -4,13 +4,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width='device-width', initial-scale=1.0">
     <title>Membership | Zia Shaheed Library</title>
-    <link rel="stylesheet" href="/css files/membership.css">
+    <link rel="stylesheet" href="/Zia-Shaheed-Library/css files/membership.css">
+    <link rel="stylesheet" href="/Zia-Shaheed-Library/css files/normalize.css">
 </head>
 <body>
+
+    <h1>Membership</h1>
+    <p>We provide two types of memberships , one for student on discounted price and other membership for general citizens. You can also for fee off , deserving candidates will be entertained well.</p>
     <table>
     <caption>Membership Structure</caption>
-    <thead style="font-size: 24px; font-weight: 900;">Membership Fees</thead>
     <tbody>
+        <!-- <thead style="font-size: 24px; font-weight: 900;">Membership Fees</thead> -->
         <tr>
             <th scope="col">Type</th>
             <th scope="col">Fees</th>
@@ -32,6 +36,66 @@
         </tfoot>
     </tbody>
     </table>
-    
+<form action="" method="post">
+
+    <img src="/Zia-Shaheed-Library/images/dfd2.png" alt="" width="400vh">
+    <h1>Membership Form</h1>
+  <h2>Name</h2>
+    <div class="username">
+        <div ><label for="firstname">First Name <span aria-label="required">*</span></label>
+        <input type="text" name="first_name" id="firstname" required>
+        <span></span>
+        </div>
+        <div><label for="lastname">Last Name <span aria-label="required">*</span></label>
+        <input type="text" name="last_name" id="lastname" required>
+        </div>
+    </div>
+    <h2>Father / Husband Name</h2>
+    <div class="guardian">
+        <div><label for="guardianfn">First Name <span aria-label="required">*</span></label>
+        <input type="text" name="guardianfirstname" id="guardianfn" required></div>
+        <div><label for="guardianln">Last Name <span aria-label="required">*</span></label>
+            <input type="text"  id="guardianln" name="guardainlastname" required>
+        </div>
+    </div>
+
+    <div class="middle">
+        <div class="abc"><label for="cnicnum">CNIC Number <span aria-label="required">*</span></label>
+        <input type="number" id="cnicnum" name="cnicnumber" minlength="13" maxlength="13" required>
+        </div>
+        <div class="abc"><label for="email">Email <span aria-label="required">*</span></label>
+        <input type="email" name="member_email" id="email" required>
+        </div>
+        <div class="abc"><label for="phonenum">Phone Number <span aria-label="required">*</span></label>
+        <input type="tel"  name="member_phone_number" id="phonenum" required>
+        </div>
+        <div class="abc"><label for="adress">Address <span aria-label="required">*</span></label>
+        <!-- <input type="text" name="member_adress" id="adress" required></div> -->
+        <textarea name="member_adress" id="adress" cols="5" rows="3"></textarea>
+    </div>
+    <fieldset>
+    <legend>Membership Type <span aria-label="required">*</span></legend>
+    <div class="btns">
+        <label for="stutype">Student Membership</label>
+        <input type="radio" name="memtype" value="student_membership" id="stutype" required>
+    </div>
+    <div class="btns">
+        <label for="gentype">General Citizen Memebership</label>
+        <input type="radio" name="memtype" value="citizen_membership" id="gentype" required>
+    </div>
+</fieldset>
+<!-- <div>
+<label for="attest">Name and Rank of Attesing Officer</label>
+<input type="text" name="attesting_officer" id="attest">
+</div>
+<div>
+<label for="memsign">Your Signature</label>
+<input type="text" name="member_signature" id="memsign">
+</div>
+<div><label for="attestsign">Attesing Officer Sign</label>
+<input type="text" name="attesting_officer_sign" id="attestsign">
+</div> -->
+<button type="submit">Submit</button>
+</form>
 </body>
 </html>

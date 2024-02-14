@@ -6,12 +6,116 @@
 html {
     font-family: sans-serif;
   }
+  body{
+    display: flex;
+    flex-direction: column;
+    background-color: lightgray;
+  }
+  form{
+    display: flex;
+    flex-direction: column;
+    border: solid 3px black;
+    padding: 10vh;
+    margin: 2vh 20vh;
+    background-color: lightblue;
+  }
+  p{
+    font-size: 18px;
+  }
+  img{
+    display: flex;
+    align-self: center;
+    max-width: 100%;
+    }
+  input{
+    height: 6vh;
+    width: 20vw;
+    display: flex;
+    flex-direction: column;
+    gap: 20vh;
+    flex-wrap: wrap;
+    border-radius: 10px;
+  }
+
+  fieldset{
+    display: flex;
+    /* flex-direction: column; */
+    border: none;
+   font-size: 18px;
+   font-weight: normal; 
+  margin-left: -2.8vh;
+  max-width: 100%;
+  }
+
+  .btns{
+    flex-direction: row;
+    display: flex;
+    gap: -100vw;
+   
+    
+  }
+  legend{
+    font-size: 1.5rem;
+    font-weight: bold;
+    
+  }
+  input[type='radio']{
+  height: 4vh;
+  margin-left: 120px;
+  /* margin-top: -22px; */
   
+
+  }
+  .username , .guardian{
+    display: flex;
+    gap: 20px;
+    font-size: 18px;
+    flex-wrap: wrap;
+  }
+  .middle{
+    display: flex;
+    flex-direction: column;
+    font-size: 1.5rem;
+    font-weight: bold;
+    gap: 2vh;
+    margin-top: 4vh;
+    /* flex-wrap: wrap; */
+  }
+  .abc{
+    display: flex;
+    flex-direction: column;
+    gap: 2vh;
+  }
+  span{
+    color: red;
+    
+  }
+   button{
+    
+    font-weight: bold;
+    width: 10vw;
+    background-color: green;
+    color: whitesmoke;
+    border-radius: 15px;
+    border: solid yellow 2px;
+    padding:4px;
+    align-self: center;
+ 
+    }
+    input:hover{
+      border: solid 2px blueviolet;
+      border-radius: 10px;
+
+    }
+    /* input:invalid{
+      border: solid red 2px;
+    } */
   table {
     border-collapse: collapse;
     border: 2px solid rgb(200,200,200);
     letter-spacing: 1px;
     font-size: 0.8rem;
+    margin: 5vh 10vw;
   }
   
   td, th {
@@ -37,5 +141,5 @@ html {
   
   caption {
     padding: 10px;
-  }
+  };
   
